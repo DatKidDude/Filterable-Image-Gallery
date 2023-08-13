@@ -3,7 +3,7 @@
 <h1 align="center">Filterable Image Gallery</h1>
 
 <div align="center">
- [LIVE](https://www.github.com/DatKidDude)
+ [LIVE](https://datkiddude.github.io/Filterable-Image-Gallery/)
 </div>
 
 ## Built with
