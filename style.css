@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #333;
+  color: snow;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Header */
+
+header {
+  margin-block: 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #14d9ef;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  color: gold;
+}
+
+/* Tags */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tag {
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 2px solid snow;
+  background: transparent;
+  color: snow;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 300ms ease;
+}
+
+.tag:hover {
+  background-color: #1cc1d3;
+}
+
+[aria-selected="true"] {
+  background-color: #1cc1d3;
+}
+
+/* Gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-item {
+  cursor: pointer;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid snow;
+  overflow: hidden;
+}
+
+.gallery-item:hover img {
+  scale: 1.2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 300ms ease;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: hsla(0 0% 0% / 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+}
+
+.modal-img {
+  display: block;
+  margin-inline: auto;
+  width: 90%;
+  max-width: 600px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 2px solid snow;
+  animation: zoom 600ms;
+}
+
+/* Modal Close Button */
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  right: 2.5rem;
+  color: snow;
+  font-family: inherit;
+  font-size: 4rem;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  height: min-content;
+  line-height: 0.5;
+  display: inline-flex;
+  align-items: center;
+  transition: color 200ms;
+}
+
+.close:hover {
+  color: rgb(184, 183, 183);
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 1160px) {
+  .gallery-container {
+    grid-template-columns: repeat(4, 200px);
+    gap: 2rem;
+    justify-content: center;
+  }
+}

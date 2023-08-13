@@ -1,0 +1,46 @@
+{
+  "products": {
+    "shoes": [
+      {
+        "imageId": "164_6wVEHfI"
+      },
+      {
+        "imageId": "a-QH9MAAVNI"
+      },
+      {
+        "imageId": "jvoZ-Aux9aw"
+      },
+      {
+        "imageId": "kP6knT7tjn4"
+      }
+    ],
+    "headphones": [
+      {
+        "imageId": "GI6L2pkiZgQ"
+      },
+      {
+        "imageId": "LSNJ-pltdu8"
+      },
+      {
+        "imageId": "oXXc-s5nNy8"
+      },
+      {
+        "imageId": "Zam8TvEgN5o"
+      }
+    ],
+    "watch": [
+      {
+        "imageId": "12V36G17IbQ"
+      },
+      {
+        "imageId": "VRERJ5Mjp4c"
+      },
+      {
+        "imageId": "4R_WEmhx8og"
+      },
+      {
+        "imageId": "TJrkkhdB39E"
+      }
+    ]
+  }
+}

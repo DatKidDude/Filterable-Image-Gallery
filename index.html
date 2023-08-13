@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filterable Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Filterable Image Gallery</h1>
+        <h2>Made With Javascript</h2>
+      </header>
+      <main>
+        <div class="tags">
+          <button class="tag" data-tag="all" aria-selected="true">All</button>
+          <button class="tag" data-tag="shoes">Shoes</button>
+          <button class="tag" data-tag="headphones">Headphones</button>
+          <button class="tag" data-tag="watch">Watch</button>
+        </div>
+        <div class="gallery-container"></div>
+      </main>
+    </div>
+    <div class="modal">
+      <button class="close">&times;</button>
+      <img class="modal-img" src="" alt="" />
+    </div>
+  </body>
+</html>
